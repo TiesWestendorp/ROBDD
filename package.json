@@ -5,6 +5,11 @@
   "type": "module",
   "license": "MIT",
   "author": "Ties Westendorp",
-
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
