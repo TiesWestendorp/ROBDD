@@ -1,0 +1,10 @@
+{
+  "name": "reduced-ordered-binary-decision-diagrams",
+  "description": "Reduced ordered binary decision diagram library for JS",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": "Ties Westendorp",
+
+  "main": "index.js"
+}
