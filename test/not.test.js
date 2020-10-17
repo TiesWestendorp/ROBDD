@@ -10,9 +10,7 @@ describe('not', () => {
   })
 
   test('check the result of the operation on a BDD (1/3)', () => {
-    let variable_1 = robdd.variable()
-    let variable_2 = robdd.variable()
-    let bdd = robdd.not(robdd.and(variable_1, variable_2))
+    const bdd = robdd.not(robdd.and(robdd.variable(), robdd.variable()))
 
     expect(bdd._then._then).toBe(robdd.False)
     expect(bdd._then._else).toBe(robdd.True)
@@ -20,9 +18,7 @@ describe('not', () => {
   })
 
   test('check the result of the operation on a BDD (2/3)', () => {
-    let variable_1 = robdd.variable()
-    let variable_2 = robdd.variable()
-    let bdd = robdd.not(robdd.or(variable_1, variable_2))
+    const bdd = robdd.not(robdd.or(robdd.variable(), robdd.variable()))
 
     expect(bdd._then).toBe(robdd.False)
     expect(bdd._else._then).toBe(robdd.False)
@@ -30,9 +26,7 @@ describe('not', () => {
   })
 
   test('check the result of the operation on a BDD (3/3)', () => {
-    let variable_1 = robdd.variable()
-    let variable_2 = robdd.variable()
-    let bdd = robdd.not(robdd.eql(variable_1, variable_2))
+    const bdd = robdd.not(robdd.eql(robdd.variable(), robdd.variable()))
 
     expect(bdd._then._then).toBe(robdd.False)
     expect(bdd._then._else).toBe(robdd.True)
