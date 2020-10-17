@@ -1,1 +1,1 @@
-module.exports = requrie('./lib/reduced-ordered-binary-decision-diagram')
+module.exports = require('./lib/reduced-ordered-binary-decision-diagram')
