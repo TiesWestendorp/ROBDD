@@ -1,15 +1,29 @@
 {
   "name": "reduced-ordered-binary-decision-diagrams",
   "description": "Reduced ordered binary decision diagram library for JS",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "license": "MIT",
   "author": "Ties Westendorp",
-  "main": "lib/reduced-ordered-binary-decision-diagrams.js",
+  "homepage": "https://github.com/TiesWestendorp/ROBDD#readme",
+  "bugs": "https://github.com/TiesWestendorp/ROBDD/issues",
+  "repository": {
+    "url": "https://github.com/TiesWestendorp/ROBDD",
+    "type": "git"
+  },
+  "keywords": [
+    "reduced",
+    "ordered",
+    "binary decision diagram",
+    "robdd",
+    "bdd"
+  ],
   "devDependencies": {
     "jest": "^26.5.3"
   },
   "scripts": {
     "test": "jest"
-  }
+  },
+  "main": "lib/reduced-ordered-binary-decision-diagrams.js",
+  "module": ""
 }
