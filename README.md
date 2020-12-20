@@ -19,3 +19,22 @@ The variable ordering is determined upon instantiation.
     ~ <a href="https://en.wikipedia.org/wiki/Binary_decision_diagram">Wikipedia</a>, 09/10/2020
   </ol>
 </details>
+
+## Installation
+```
+npm i reduced-ordered-binary-decision-diagrams
+```
+
+# Example
+
+```javascript
+const { ROBDD } = require('reduced-ordered-binary-decision-diagrams')
+
+const x = ROBDD.variable()
+const y = ROBDD.variable()
+
+console.warn(ROBDD.or(x, y))
+```
+
+# Future plans
+None, currently
