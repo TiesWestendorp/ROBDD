@@ -7,6 +7,7 @@ describe('toJSON', () => {
   })
 
   test('check the result of the operation on a BDD (1/2)', () => {
+    ROBDD.reset()
     const x = ROBDD.variable()
     const y = ROBDD.variable()
     const bdd = ROBDD.or(x, y)
@@ -15,6 +16,7 @@ describe('toJSON', () => {
   })
 
   test('check the result of the operation on a BDD (2/2)', () => {
+    ROBDD.reset()
     const x   = ROBDD.variable()
     const y   = ROBDD.variable()
     const bdd = ROBDD.and(x, y)
