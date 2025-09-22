@@ -16,10 +16,14 @@
     "ordered",
     "binary decision diagram",
     "robdd",
-    "bdd"
+    "bdd",
+    "truth table",
+    "truth-table",
+    "binary",
+    "diagram"
   ],
   "devDependencies": {
-    "jest": "^26.5.3"
+    "jest": "^30.1.3"
   },
   "scripts": {
     "test": "jest"
