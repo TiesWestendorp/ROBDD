@@ -33,7 +33,15 @@ const { ROBDD } = require('reduced-ordered-binary-decision-diagrams')
 const x = ROBDD.variable()
 const y = ROBDD.variable()
 
-console.warn(ROBDD.or(x, y))
+const robdd = ROBDD.or(x, y)
+
+// Prints the ROBDD object
+console.warn(robdd)
+
+// Prints all satisfying assignments
+for(const solution of robdd.solutions([x._label, y._label])) {
+  console.warn(solution)
+}
 ```
 
 # Future plans
