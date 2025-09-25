@@ -9,6 +9,12 @@ describe('solutions', () => {
     expect(ROBDD.False.numberOfSatisfyingAssignments([x._label])).toBe(0)
   })
 
+  test('returns 2^n for ROBDD.True', () => {
+    expect(ROBDD.True.numberOfSatisfyingAssignments([x._label])).toBe(2)
+    expect(ROBDD.True.numberOfSatisfyingAssignments([x._label, y._label])).toBe(4)
+    expect(ROBDD.True.numberOfSatisfyingAssignments([x._label, y._label, z._label])).toBe(8)
+  })
+
   test('returns one when there is only one solution', () => {
     expect(ROBDD.and(x, y).numberOfSatisfyingAssignments([x._label, y._label])).toBe(1)
   })
@@ -19,6 +25,7 @@ describe('solutions', () => {
 
   test('returns the correct number of solutions when there are redundant variables', () => {
     expect(x.numberOfSatisfyingAssignments([x._label, y._label])).toBe(2)
+    expect(y.numberOfSatisfyingAssignments([x._label, y._label])).toBe(2)
   })
 
   test('returns the correct number of solutions for more complex examples', () => {
